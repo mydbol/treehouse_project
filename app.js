@@ -3,4 +3,5 @@
 var profile=require('./profile.js')
 var username='kevinobrien2';
 // Connect to the api url 
-profile.get(username);
+username=process.argv.slice(2);
+username.forEach(profile.get);
